@@ -36,6 +36,7 @@ void sighand(int p);
 void interactive(feranmi_t *mytype);
 int print(char *m);
 void getinput(feranmi_t *mytype);
+void pattanal(feranmi_t *mytype, char **ar);
 
 
 #endif

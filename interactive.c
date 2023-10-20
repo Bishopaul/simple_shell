@@ -36,7 +36,7 @@ void interactive(feranmi_t *mytype)
 
 			mytype->thearguments = args;
 			mytype->buff = buffer;
-			patternanalysis(mytype, args);
+			pattanal(mytype, args);
 			evaluate(args, mytype, buffer);
 
 			releasepointermem((void *) args);
