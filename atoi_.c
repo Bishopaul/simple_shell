@@ -10,7 +10,7 @@
 
 int atoi_(char *s)
 {
-	size_t t = 0; 
+	size_t t = 0;
 	size_t z = 0;
 	size_t a = 0;
 	size_t b = 1;
