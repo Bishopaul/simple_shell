@@ -31,6 +31,11 @@ void beg(feranmi_t *mytype);
 char *mergewords(char *word1, char *word2, char *word3, const char *deli);
 char *readprompt(void);
 void releasememory(void *point);
+void releasepointermem(void *point);
+void sighand(int p);
+void interactive(feranmi_t *mytype);
+int print(char *m);
+void getinput(feranmi_t *mytype);
 
 
 #endif
