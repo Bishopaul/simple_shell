@@ -19,7 +19,7 @@ void interactive(feranmi_t *mytype)
 		getinput(mytype);
 
 		env_path = getenv("PATH");
-		iscurrpath(env_path, mytype);
+		patharray(env_path, mytype);
 
 		mytype->env = env_path;
 		buffer = readprompt();
@@ -37,7 +37,7 @@ void interactive(feranmi_t *mytype)
 			mytype->thearguments = args;
 			mytype->buff = buffer;
 			pattanal(mytype, args);
-			evaluate(args, mytype, buffer);
+			check_prompt(args, mytype, buffer);
 
 			releasepointermem((void *) args);
 		}

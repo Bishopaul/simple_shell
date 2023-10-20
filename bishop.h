@@ -37,6 +37,9 @@ void interactive(feranmi_t *mytype);
 int print(char *m);
 void getinput(feranmi_t *mytype);
 void pattanal(feranmi_t *mytype, char **ar);
+void patharray(char *path, feranmi_t *mytype);
+void check_prompt(char **ar, feranmi_t *mytype, char *buff);
+int confirm_builtin(feranmi_t *mytype, char **ar);
 
 
 #endif
