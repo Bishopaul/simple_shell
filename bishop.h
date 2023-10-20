@@ -29,6 +29,8 @@ int numb(int number);
 int numeric(int num);
 void beg(feranmi_t *mytype);
 char *mergewords(char *word1, char *word2, char *word3, const char *deli);
+char *readprompt(void);
+void releasememory(void *point);
 
 
 #endif
