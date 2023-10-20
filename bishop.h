@@ -27,6 +27,8 @@ char **tokenizer(char *str, const char *delim);
 char *numstr(int num);
 int numb(int number);
 int numeric(int num);
+void beg(feranmi_t *mytype);
+char *mergewords(char *word1, char *word2, char *word3, const char *deli);
 
 
 #endif
