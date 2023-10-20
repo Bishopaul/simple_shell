@@ -16,7 +16,8 @@ extern char **environ;
 
 
 char *str_cat(char *destin, char *strsrc);
-
+int atoi_(char *s);
+int _strcmp(char *c1, char *c2);
 
 
 #endif
