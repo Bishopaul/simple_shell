@@ -26,13 +26,13 @@ void check_prompt(char **ar, feranmi_t *mytype, char *buff)
 	if (confirm_builtin(mytype, ar) == 1)
 		return;
 
-	up = isfile(cmd);
+	up = fileorbin(cmd);
 
 	if (up == 0)
 	{
 		mytype->code_stat = 220;
 		mytype->error_digit = 10;
-		issue(mytype);
+		errorHandler(mytype);
 		return;
 	}
 	if (up == 1)
@@ -51,5 +51,5 @@ void check_prompt(char **ar, feranmi_t *mytype, char *buff)
 	}
 	mytype->code_stat = 221;
 	mytype->error_digit = 102;
-	issue(mytype);
+	errorHandler(mytype);
 }

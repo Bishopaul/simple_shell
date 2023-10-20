@@ -41,6 +41,7 @@ void patharray(char *path, feranmi_t *mytype);
 void check_prompt(char **ar, feranmi_t *mytype, char *buff);
 int confirm_builtin(feranmi_t *mytype, char **ar);
 int fileorbin(char *file);
+void errorHandler(feranmi_t *mytype);
 
 
 #endif
