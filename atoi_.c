@@ -10,8 +10,8 @@
 
 int atoi_(char *s)
 {
-	size_t t = 0;
-	size_t z = 0;
+	unsigned int t = 0;
+	unsigned int z = 0;
 	size_t a = 0;
 	size_t b = 1;
 	size_t c = 1;
@@ -19,7 +19,7 @@ int atoi_(char *s)
 
 	while (*(s + t) != '\0')
 	{
-		if (z > 0 && (*(z + t) < '0' || *(s + t) > '9'))
+		if (z > 0 && (*(s + t) < '0' || *(s + t) > '9'))
 		{
 			break;
 		}

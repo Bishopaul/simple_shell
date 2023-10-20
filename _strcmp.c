@@ -14,7 +14,7 @@ int _strcmp(char *c1, char *c2)
 {
 	int a, b = 0;
 
-	for (a = 0; c1[a] != '\0'; &&b == 0; a++)
+	for (a = 0; c1[a] != '\0' && b == 0; a++)
 	{
 		b = c1[a] - c2[a];
 	}
