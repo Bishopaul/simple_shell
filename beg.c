@@ -11,5 +11,5 @@
 
 void beg(feranmi_t *mytype)
 {
-	initiatePrompt(mytype);
+	interactive(mytype);
 }
