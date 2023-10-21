@@ -46,6 +46,8 @@ int exec_builtin(feranmi_t *mytype, char **ar);
 void exitt(feranmi_t *mytype, char **ar);
 void b_env(feranmi_t *mytype, char **ar);
 void env_var(void);
+char *find_dir(char *d, feranmi_t *mytype);
+int isexec(char *n);
 
 
 #endif
