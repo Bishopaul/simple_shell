@@ -16,6 +16,6 @@ void pattanal(feranmi_t *mytype, char **ar)
 
 	for (a = 0; ar[a] != NULL; a++)
 	{
-		ar[a] = handlepattern(mytype, ar[a]);
+		ar[a] = handle_pattern(mytype, ar[a]);
 	}
 }

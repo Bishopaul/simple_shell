@@ -10,7 +10,7 @@
  **/
 
 char *selectessage(feranmi_t mytype)
-i{
+{
 	int a;
 	int c;
 

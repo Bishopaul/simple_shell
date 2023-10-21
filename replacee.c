@@ -20,7 +20,7 @@ char *replacee(feranmi_t *mytype, int *id, char *s)
 	sig = *s;
 	if (sig != '?' && sig != '$')
 	{
-		tmp = subenv(mytype, s);
+		tmp = repenv(mytype, s);
 		return (tmp);
 	}
 
