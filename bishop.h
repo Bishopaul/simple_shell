@@ -48,6 +48,7 @@ void b_env(feranmi_t *mytype, char **ar);
 void env_var(void);
 char *find_dir(char *d, feranmi_t *mytype);
 int isexec(char *n);
+void run(char *c, char **ar, feranmi_t *mytype, char *buffer);
 
 
 #endif

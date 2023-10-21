@@ -42,7 +42,7 @@ void check_prompt(char **ar, feranmi_t *mytype, char *buff)
 	}
 	if (getcurrentdir(cmd, ar, buff, mytype) == 1)
 		return;
-	mytype->cmd_path = choose(cmd, mytype);
+	mytype->cmd_path = find_dir(cmd, mytype);
 	if (mytype->cmd_path != NULL)
 	{
 		run(mytype->cmd_path, ar, mytype, buff);
