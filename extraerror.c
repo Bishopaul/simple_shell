@@ -16,7 +16,7 @@ void *extraerror(char *m, feranmi_t *mytype)
 	int a_size, b_size, m_size;
 
 	b = NULL;
-	a = selectmessage(*mytype);
+	a = selectessage(*mytype);
 	b = numstr(mytype->n_cmd);
 
 	b_size = _strlen(b);

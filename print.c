@@ -11,5 +11,5 @@
 
 int print(char *m)
 {
-	return (outputToFD(m, 1));
+	return (outputtofd(m, 1));
 }

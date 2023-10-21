@@ -15,7 +15,7 @@ void errorHandler(feranmi_t *mytype)
 	int a_size, b_size;
 
 	b = NULL;
-	a = sellectmessages(*mytype);
+	a = selectessage(*mytype);
 	b = numstr(mytype->n_cmd);
 
 	a_size = _strlen(mytype->argv[0]);
