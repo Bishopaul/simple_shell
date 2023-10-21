@@ -42,6 +42,10 @@ void check_prompt(char **ar, feranmi_t *mytype, char *buff);
 int confirm_builtin(feranmi_t *mytype, char **ar);
 int fileorbin(char *file);
 void errorHandler(feranmi_t *mytype);
+int exec_builtin(feranmi_t *mytype, char **ar);
+void exitt(feranmi_t *mytype, char **ar);
+void b_env(feranmi_t *mytype, char **ar);
+void env_var(void);
 
 
 #endif

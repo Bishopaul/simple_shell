@@ -16,8 +16,8 @@ int confirm_builtin(feranmi_t *mytype, char **ar)
 	int b;
 
 	sysFunction_t builtins[] = {
-		{"exit", binaryExit},
-		{"env", binaryEnv}
+		{"exit", exitt},
+		{"env", b_env}
 	};
 
 	b = sizeof(builtins) / sizeof(builtins[0]);
