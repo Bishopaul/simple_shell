@@ -49,6 +49,14 @@ void env_var(void);
 char *find_dir(char *d, feranmi_t *mytype);
 int isexec(char *n);
 void run(char *c, char **ar, feranmi_t *mytype, char *buffer);
-
+int cdr(char *cmd, char **ar, char *buff, feranmi_t *mytype);
+int displayerror(char *m);
+void *extraerror(char *m, feranmi_t *mytype);
+char *replacee(feranmi_t *mytype, int *id, char *s);
+int outputtofd(char *m, int fd);
+int writechartofd(char c, int fd);
+void ffe(void);
+char getenviron(const char *v);
+char *selectessage(feranmi_t mytype);
 
 #endif

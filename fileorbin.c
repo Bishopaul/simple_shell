@@ -20,7 +20,7 @@ int fileorbin(char *file)
 	{
 		if (file[b] == '/')
 		{
-			return (isexecutable(file));
+			return (isexec(file));
 		}
 	}
 	return (-10);
