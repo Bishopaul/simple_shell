@@ -60,5 +60,7 @@ char getenviron(const char *v);
 char *selectessage(feranmi_t mytype);
 int managenumbers(feranmi_t *mytype, char *ar);
 int letter(char *str);
+char *repenv(feranmi_t *mytype, char *env_var);
+char *repvalue(feranmi_t *mytype, int *id, char *str);
 
 #endif
