@@ -10,7 +10,7 @@
  **/
 
 char *selectessage(feranmi_t mytype)
-{
+i{
 	int a;
 	int c;
 
@@ -21,7 +21,7 @@ char *selectessage(feranmi_t mytype)
 		{_ILLEGAL_NUMBER_, 133}
 	};
 
-	choices = sizeof(msgs) / sizeof(msgs[0]);
+	c = sizeof(msgs) / sizeof(msgs[0]);
 	for (a = 0; a < c; a++)
 		if (mytype.error_digit == msgs[a].password)
 			return (msgs[a].msg);
