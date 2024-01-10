@@ -16,7 +16,9 @@ int cdr(char *cmd, char **ar, char *buff, feranmi_t *mytype)
 {
 
 	if (mytype->cur_path == 0)
+	{
 		return (0);
+	}
 
 	if (isexec(cmd) == 1)
 	{

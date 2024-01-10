@@ -11,11 +11,12 @@
 
 int _strlen(char *s)
 {
-	int total = 0;
+	int total;
 
+	total = 0;
 	while (s[total] != '\0')
 	{
-		total++;
+	total++;
 	}
 
 	return (total);

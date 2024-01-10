@@ -10,7 +10,7 @@
  * Return: void
  */
 
-void *extraerror(feranmi_t *mytype, char *m)
+void extraerror(feranmi_t *mytype, char *m)
 {
 	char *a, *b, *c, *d;
 	int a_size, b_size, m_size;

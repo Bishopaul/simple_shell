@@ -9,7 +9,7 @@
  * Return: NULL on failure, otherwise
  */
 
-char getenviron(const char *v)
+char *getenviron(const char *v)
 {
 	char **e, *a, *t, *o;
 	int s;
