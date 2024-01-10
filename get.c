@@ -11,7 +11,7 @@
 
 char getenviron(const char *v)
 {
-	char *e, *a, *t, *o;
+	char **e, *a, *t, *o;
 	int s;
 
 	s = _strlen((char *) v);
@@ -26,6 +26,7 @@ char getenviron(const char *v)
 			free(a);
 			return (NULL);
 		}
+
 		if (_strlen(t) != s)
 		{
 			free(a);
@@ -39,6 +40,6 @@ char getenviron(const char *v)
 			return (o);
 		}
 		free(a);
-							}
-		return (NULL);
+	}
+	return (NULL);
 }

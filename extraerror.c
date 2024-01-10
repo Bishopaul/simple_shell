@@ -10,13 +10,13 @@
  * Return: void
  */
 
-void *extraerror(char *m, feranmi_t *mytype)
+void *extraerror(feranmi_t *mytype, char *m)
 {
 	char *a, *b, *c, *d;
 	int a_size, b_size, m_size;
 
 	b = NULL;
-	a = selectessage(*mytype);
+	a = selectmessage(*mytype);
 	b = numstr(mytype->n_cmd);
 
 	b_size = _strlen(b);

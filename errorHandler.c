@@ -15,11 +15,11 @@ void errorHandler(feranmi_t *mytype)
 	int a_size, b_size;
 
 	b = NULL;
-	a = selectessage(*mytype);
+	a = selectmessage(*mytype);
 	b = numstr(mytype->n_cmd);
 
-	a_size = _strlen(mytype->argv[0]);
 	b_size = _strlen(b);
+	a_size = _strlen(mytype->argv[0]);
 
 	c = malloc(a_size + b_size + 3);
 
