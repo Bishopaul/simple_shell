@@ -1,4 +1,3 @@
-#include "feranmi.h"
 #include "bishop.h"
 
 /**

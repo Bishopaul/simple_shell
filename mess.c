@@ -9,7 +9,7 @@
  * Return: char
  **/
 
-char *selectessage(feranmi_t mytype)
+char *selectmessage(feranmi_t mytype)
 {
 	int a;
 	int c;

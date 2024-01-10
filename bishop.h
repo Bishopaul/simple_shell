@@ -57,7 +57,7 @@ int outputtofd(char *m, int fd);
 int writechartofd(char c, int fd);
 void ffe(void);
 char getenviron(const char *v);
-char *selectessage(feranmi_t mytype);
+char *selectmessage(feranmi_t mytype);
 int managenumbers(feranmi_t *mytype, char *ar);
 int letter(char *str);
 char *repenv(feranmi_t *mytype, char *env_var);

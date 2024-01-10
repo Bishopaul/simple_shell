@@ -5,7 +5,7 @@
  * outputtofd - function that prints string to file d
  *
  * @m: message
- * fd: file d
+ * @fd: file d
  *
  * Return: int on success
  */

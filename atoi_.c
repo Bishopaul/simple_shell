@@ -12,22 +12,18 @@ int atoi_(char *s)
 {
 	unsigned int t = 0;
 	unsigned int z = 0;
-	size_t a = 0;
-	size_t b = 1;
-	size_t c = 1;
-	size_t d;
+	unsigned int a = 0;
+	unsigned int b = 1;
+	unsigned int c = 1;
+	unsigned int d;
 
 	while (*(s + t) != '\0')
 	{
 		if (z > 0 && (*(s + t) < '0' || *(s + t) > '9'))
-		{
 			break;
-		}
 
 		if (*(s + t) == '-')
-		{
 			b *= -1;
-		}
 
 		if ((*(s + t) >= '0') && (*(s + t) <= '9'))
 		{
@@ -43,6 +39,5 @@ int atoi_(char *s)
 		a = a + ((*(s + d) - 48) * c);
 		c /= 10;
 	}
-
 	return (a * b);
 }
